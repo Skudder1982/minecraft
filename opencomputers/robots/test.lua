@@ -4,6 +4,9 @@ local timerEvent;
 
 function placeQuarry()
 	robot.up();
+	robot.select(14);
+	robot.placeDown();
+	robot.up();
 	robot.select(15);
 	robot.placeDown();
 	robot.up();
@@ -16,6 +19,9 @@ function digQuarry()
 	robot.swingDown();
 	robot.down();
 	robot.select(15);
+	robot.swingDown();
+	robot.down();
+	robot.select(14);
 	robot.swingDown();
 	robot.down();
 end
